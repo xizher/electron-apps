@@ -1,0 +1,25 @@
+{
+  "name": "electron-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^12.0.2",
+    "electron-packager": "^15.2.0"
+  },
+  "scripts": {
+    "start": "npx electron .",
+    "build:string-crypto": "npx electron-packager ./ string-crypto --out ./build --app-version 1.0.0 --overwrite --icon=./domes/string-crypto/assets/favicon.c8381a66.ico"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "domes/string-crypto/assets/favicon.c8381a66.ico"
+      }
+    }
+  }
+}
